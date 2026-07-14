@@ -77,21 +77,36 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Apex Media — Social Media Marketing Agency for Local Businesses" },
+      {
+        name: "description",
+        content:
+          "Done-for-you social media marketing agency helping local service businesses generate 20+ qualified leads a month. Paid ads, content, and lead-gen systems with a performance guarantee.",
+      },
+      { name: "author", content: "Apex Media" },
+      { property: "og:title", content: "Apex Media — Get 20+ Qualified Leads a Month, Guaranteed" },
+      {
+        property: "og:description",
+        content:
+          "Full-service social media marketing agency for local service businesses and e-commerce brands. Performance-guaranteed lead generation.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Apex Media — Growth-Focused SMMA" },
+      {
+        name: "twitter:description",
+        content: "Qualified leads in 30 days, or you don't pay. Done-for-you marketing for local businesses.",
+      },
     ],
     links: [
+      { rel: "stylesheet", href: appCss },
+      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: appCss,
+        href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap",
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
     ],
   }),
   shellComponent: RootShell,
@@ -99,6 +114,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
   notFoundComponent: NotFoundComponent,
   errorComponent: ErrorComponent,
 });
+
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
