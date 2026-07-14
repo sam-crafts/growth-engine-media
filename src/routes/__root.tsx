@@ -84,19 +84,21 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "Done-for-you social media marketing agency helping local service businesses generate 20+ qualified leads a month. Paid ads, content, and lead-gen systems with a performance guarantee.",
       },
       { name: "author", content: "Apex Media" },
-      { property: "og:title", content: "Apex Media — Get 20+ Qualified Leads a Month, Guaranteed" },
+      { property: "og:title", content: "Apex Media — Social Media Marketing Agency for Local Businesses" },
       {
         property: "og:description",
         content:
-          "Full-service social media marketing agency for local service businesses and e-commerce brands. Performance-guaranteed lead generation.",
+          "Done-for-you social media marketing agency helping local service businesses generate 20+ qualified leads a month. Paid ads, content, and lead-gen systems with a performance guarantee.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Apex Media — Growth-Focused SMMA" },
+      { name: "twitter:title", content: "Apex Media — Social Media Marketing Agency for Local Businesses" },
       {
         name: "twitter:description",
-        content: "Qualified leads in 30 days, or you don't pay. Done-for-you marketing for local businesses.",
+        content: "Done-for-you social media marketing agency helping local service businesses generate 20+ qualified leads a month. Paid ads, content, and lead-gen systems with a performance guarantee.",
       },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/ae59fd01-de3a-4cf5-8138-b3f8591d214d" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/ae59fd01-de3a-4cf5-8138-b3f8591d214d" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
